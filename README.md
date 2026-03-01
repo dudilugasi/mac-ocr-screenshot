@@ -18,13 +18,13 @@ This will:
 2. Install everything to `~/.local/share/ocr-screenshot/`
 3. Create and load a LaunchAgent so it starts at every login
 
-**That's it.** The shortcut `⌥⌘5` (Option + Command + 5) is ready to use immediately.
+**That's it.** The shortcut `⌘⇧1` (Command + Shift + 1) is ready to use immediately.
 
 ---
 
 ## Usage
 
-1. Press `⌥⌘5` from anywhere
+1. Press `⌘⇧1` from anywhere
 2. Draw a rectangle around the text you want (crosshair cursor)
 3. Press `ESC` to cancel
 4. A notification confirms — paste with `⌘V`
@@ -46,7 +46,7 @@ If nothing happens: **System Settings → Privacy & Security → Screen Recordin
 |------|------|
 | `ocr.swift` | Feeds an image through macOS Vision OCR, prints recognized text to stdout |
 | `ocr-clip.sh` | Captures a screen region with `screencapture -i`, pipes text through `ocr`, copies with `pbcopy` |
-| `ocr-hotkey.swift` | Menu bar app — registers `⌥⌘5` as a global hotkey via Carbon (no Accessibility permission required) |
+| `ocr-hotkey.swift` | Menu bar app — registers `⌘⇧1` as a global hotkey via Carbon (no Accessibility permission required) |
 | `install.sh` | Builds everything and registers a LaunchAgent for login auto-start |
 
 ---
